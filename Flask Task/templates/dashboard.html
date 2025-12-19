@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+<div class="box dashboard-box">
+    <div class="dashboard-header">
+        <h2>Welcome, {{ name }}! 👋</h2>
+        <p class="username">@{{ username }}</p>
+    </div>
+    
+    <div class="dashboard-content">
+        <div class="info-card">
+            <h3>📋 Account Information</h3>
+            <div class="info-row">
+                <span class="label">Full Name:</span>
+                <span class="value">{{ name }}</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Username:</span>
+                <span class="value">{{ username }}</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Status:</span>
+                <span class="value status-active">Active</span>
+            </div>
+        </div>
+        
+        <!-- <div class="quick-actions">
+            <h3>⚡ Quick Actions</h3>
+            <div class="action-buttons">
+                <button class="action-btn" onclick="alert('Profile settings coming soon!')">
+                    📝 Edit Profile
+                </button>
+                <button class="action-btn" onclick="alert('Settings coming soon!')">
+                    ⚙️ Settings
+                </button>
+                <button class="action-btn" onclick="alert('Help center coming soon!')">
+                    ❓ Help
+                </button>
+            </div>
+        </div> -->
+    </div>
+    
+    <div class="dashboard-footer">
+        <a href="/logout" class="logout-btn">🚪 Logout</a>
+    </div>
+</div>
+</body>
+</html>
